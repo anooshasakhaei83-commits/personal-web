@@ -1,0 +1,284 @@
+html {
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* --- ناوبری اصلی --- */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #97cba9;
+  padding: 1rem 2rem;
+  position: relative;
+  height: auto;
+  z-index: 10;
+}
+
+.first-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.first-nav a {
+  color: antiquewhite;
+  font-weight: 550;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.first-nav a:hover {
+  transform: scale(1.2);
+  color: #00acee;
+}
+
+
+/* --- لینک‌های شبکه اجتماعی --- */
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  font-size: 1.8rem;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+  color: #00acee;
+}
+
+/* --- انیمیشن قلم و متن --- */
+.write-scene {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 90vh;
+}
+
+.text {
+  font-size: 2rem;
+  color: #080000;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  z-index: -2;
+  transform: translatey(11rem) scale(1.5);
+
+}
+
+.hand {
+  width: 40%;
+  max-width: 300px;
+  animation: moveAndBounce 6s infinite ease-in-out;
+  z-index: 1;
+  transform: scale(2);
+}
+
+@keyframes moveAndBounce {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(5rem, -.5rem); }
+  50% { transform: translate(10rem, .5rem); }
+  75% { transform: translate(15rem, -.5rem); }
+  100% { transform: translate(20rem, 0); }
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #97cba9;
+}
+
+main > div {
+    flex: 1;
+    min-width: 0; /* خیلی مهم */
+}
+
+.girl img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px; /* اختیاری */
+}
+
+.pp {
+    display: flex;
+    align-items: center;
+}
+
+.pp p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: aliceblue;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.divider hr {
+  flex: 1;
+  height: 1px;
+  background-color: #999;
+  border: none;
+}
+
+.divider span {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 700;
+  font-size: x-large;
+  color:black;
+}
+
+
+.contact{
+    margin-top: 2rem;
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+    background: #97cba9;
+}
+
+.contact p{
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.8rem;
+    white-space: pre-line;
+    justify-self: center;
+
+}
+@media(max-width:768px){
+    html{
+        overflow-x: hidden;
+    }
+    main{
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+
+    }
+
+    .girl{
+        display: none;
+    }
+    .pp {
+        justify-content: center;
+    }
+
+    .pp p{
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact{
+        width: 100%;
+    }
+    .contact p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+        width: 100%;
+    }
+    .hand {
+        transform: scale(1);
+        width: 70%;
+    }
+
+    .text {
+        /* transform: none; */
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+}
+
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.social-link a{
+    font-family: inherit;
+    font-size: 5rem;
+}
+.social-link a:hover {
+  transform: scale(1.2);
+  color: #00acee;
+}
+
+ .iframe-section {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+    padding: 2rem;
+}
+@media (max-width:768px) {
+    .social-link a{
+    font-size: 2.5rem;
+}
+    .iframe-section {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .project-frame {
+        height: 60vh;
+    }
+}
+
+
+/* لینک اصلی */
+.project-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* خود iframe */
+.project-frame {
+    width: 100%;
+    height: 80vh;
+    border: none;
+    pointer-events: none;  /* اجازه میده کلیک ازش رد بشه */
+}
+
+/* این لایه باعث میشه کلیک به a برسه */
+.project-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
