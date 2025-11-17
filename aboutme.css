@@ -87,6 +87,7 @@ body {
   animation: moveAndBounce 6s infinite ease-in-out;
   z-index: 1;
   transform: scale(2.5) !important;
+  display: inline-block;
 }
 
 @keyframes moveAndBounce {
