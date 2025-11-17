@@ -83,10 +83,10 @@ body {
 
 .hand {
   /* width: 40%; */
-  max-width: 300px;
+  /* max-width: 300px; */
   animation: moveAndBounce 6s infinite ease-in-out;
   z-index: 1;
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
   display: inline-block;
 }
 
