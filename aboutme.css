@@ -86,7 +86,7 @@ body {
   max-width: 300px;
   animation: moveAndBounce 6s infinite ease-in-out;
   z-index: 1;
-  transform: scale(2.5);
+  transform: scale(2.5) !important;
 }
 
 @keyframes moveAndBounce {
